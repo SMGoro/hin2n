@@ -24,7 +24,7 @@
                 android:id="@+id/til_setting_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Setting name">
+                android:hint="设置名称">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tie_setting_name"
@@ -43,7 +43,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="N2N version"/>
+                    android:text="N2N 版本"/>
                 <RadioGroup
                     android:id="@+id/rg_version"
                     android:layout_width="match_parent"
@@ -96,7 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/til_super_node"
-                android:hint="Community">
+                android:hint="连接组(默认: imc )">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tie_community"
@@ -111,7 +111,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/til_community"
-                android:hint="Encrypt key">
+                android:hint="加密密钥(默认不填)">
                 <!--app:passwordToggleEnabled="true"-->
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -140,7 +140,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@id/get_ip_from_supernode_check_box"
-                    android:text="Get IP from supernode"/>
+                    android:text="自动获取IP"/>
             </RelativeLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -149,7 +149,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rl_get_ip_from_supernode"
-                android:hint="IP address">
+                android:hint="IP 地址(需同网段)">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tie_ip_address"
@@ -164,7 +164,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/til_ip_address"
-                android:hint="Subnet mask">
+                android:hint="子网掩码">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tie_net_mask"
@@ -180,7 +180,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/til_net_mask"
-                android:hint="Device Description">
+                android:hint="设置描述">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/tie_dev_desc"
@@ -206,7 +206,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@id/more_setting_check_box"
-                    android:text="More settings"/>
+                    android:text="更多设置"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -222,12 +222,12 @@
                     android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Encryption method">
+                    android:hint="加密方式">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Encryption method"/>
+                        android:text="加密方式"/>
 
                     <Spinner
                         android:id="@+id/til_encryption_mode"
@@ -301,7 +301,7 @@
                     android:id="@+id/check_box_local_ip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Automatically detect local IP"/>
+                    android:text="自动检测本地IP"/>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_marginTop="5dp"
@@ -503,7 +503,7 @@
                     android:id="@+id/btn_save"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="save"/>
+                    android:text="保存"/>
 
                 <LinearLayout
                     android:id="@+id/ll_buttons"
@@ -512,7 +512,7 @@
                     android:layout_height="wrap_content">
                     <Button
                         android:id="@+id/btn_modify"
-                        android:text="save"
+                        android:text="保存"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
                     <!--<Button-->
